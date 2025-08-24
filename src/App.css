@@ -1,38 +1,170 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  color: #302d2d;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3f51b5;
+}
+
+h4 {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 10px 0 20px;
+}
+
+/* Balance and Income/Expenses */
+.inc-exp-container {
+  display: flex;
+  justify-content: space-between;
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.inc-exp-container > div {
+  flex: 1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.money {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.money.plus {
+  color: #2ecc71;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.money.minus {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Transaction List */
+.list {
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.list li {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  color: #333;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  border-right: 5px solid;
+  border-radius: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.list li.plus {
+  border-color: #2ecc71;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list li.minus {
+  border-color: #e74c3c;
+}
+
+/* Delete Button */
+.delete-btn {
+  cursor: pointer;
+  background: #e74c3c;
+  border: 0;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 1;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+/* Add Transaction Form */
+.form-control {
+  margin: 15px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border: 1px solid #3f51b5;
+  outline: none;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #3f51b5;
+  box-shadow: 0px 3px 10px rgba(63, 81, 181, 0.3);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 12px;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #303f9f;
 }

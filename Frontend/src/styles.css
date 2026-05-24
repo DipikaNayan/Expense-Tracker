@@ -1,0 +1,405 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Page Layout */
+.app {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #1e293b;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  background: #ef4444;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background: #dc2626;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Header */
+.header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.card.balance h2 {
+  color: #111;
+}
+
+.card.income h2 {
+  color: green;
+}
+
+.card.expense h2 {
+  color: red;
+}
+
+/* Form */
+.form {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: #2563eb;
+}
+
+/* Transaction List */
+.transactions {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction.income span:last-child {
+  color: green;
+}
+
+.transaction.expense span:last-child {
+  color: red;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+}
+
+/* Auth Pages (Login/Register) */
+
+.auth-container {
+  min-height: 100vh;
+  background: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-box {
+  background: white;
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 10px;
+  background: #1e293b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-box button:hover {
+  background: #0f172a;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.auth-footer span {
+  color: #3b82f6;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 250px;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+}
+
+.profile-box {
+  margin: 20px 0;
+  padding: 10px;
+  background: #334155;
+  border-radius: 8px;
+}
+
+.profile-box p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.logout-btn {
+  background: #ef4444;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* FORM CONTROL */
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-control label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* INPUT + SELECT */
+.form-control input,
+.form-control select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* SELECT BOX FIX */
+.select-box {
+  width: 100%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* BUTTON */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #4e73df;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #2e59d9;
+}
+/* HISTORY BOX */
+.history-container {
+  background: #f8f9fc;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* LIST */
+.history-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* EACH ITEM */
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border-left: 5px solid #4e73df;
+}
+
+/* INCOME / EXPENSE COLORS */
+.history-item.plus {
+  border-left-color: green;
+}
+
+.history-item.minus {
+  border-left-color: red;
+}
+
+/* TEXT */
+.history-item span {
+  font-weight: bold;
+}
+
+.delete-btn {
+  background-color: #ff4d4f; /* Professional red */
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.delete-btn:hover {
+  background-color: #d9363e; /* Darker red on hover */
+  transform: scale(1.05);
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 14px 18px;
+  margin: 12px 0;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  list-style: none;
+}
+
+li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+li.minus {
+  border-right: 5px solid #e74c3c;
+}
+
+.transaction-details {
+  display: flex;
+  flex-direction: column;
+}
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 180px;
+  justify-content: flex-end;
+}
+
+.category-label {
+  font-size: 12px;
+  color: #888;
+}
+.amount {
+  width: 100px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.plus .amount {
+  color: #2ecc71;
+}
+
+.minus .amount {
+  color: #e74c3c;
+}
+
+.profile-box {
+  background: #2c3e50;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 15px 0;
+  color: white;
+  font-size: 14px;
+}
+
+.profile-box p {
+  margin: 4px 0;
+}
